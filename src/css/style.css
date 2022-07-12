@@ -1,0 +1,52 @@
+
+a{
+    text-decoration: none;
+    color: aliceblue;
+}
+.container{
+    margin: 0 auto;
+        width: 1300px;
+        background-image: url(../img/fon.jpg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        color: aliceblue;
+}
+.box{
+    display: flex;
+
+}
+
+.side-bar{
+    background-color: rgba(0, 123, 255,0.3);
+}
+.side-bar-contacts{
+    display: flex;
+    flex-direction: column;
+}
+
+.side-bar-contacts a:not(:last-child){
+    margin-bottom: 10px;
+}
+
+
+.side-bar-content{
+    margin-left: 15px;
+
+}
+.content{
+width: 520px;
+    background-color: rgba(242, 246, 251, 0.538);
+  
+    border-radius: 10px;
+    margin: 20px 90px;
+    padding: 25px;
+    color: black;
+}
+.content a{
+    color: black;
+}
+
+.lang{
+  
+    margin-right: auto;
+}
