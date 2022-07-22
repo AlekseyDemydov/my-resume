@@ -3,6 +3,7 @@ a{
     text-decoration: none;
     color: aliceblue;
 }
+
 .container{
 margin: 0 auto;
     width: 1168px;
@@ -26,7 +27,7 @@ margin: 0 auto;
 .side-bar-contacts{
     display: flex;
     flex-direction: column;
-    
+  
 }
 
 .side-bar-contacts a:not(:last-child){
@@ -62,4 +63,11 @@ width: 520px;
     border-radius: 30px;
     padding: 10px;
     
+}
+.contact-item{
+    display: flex;
+    align-items: baseline;
+}
+.contact-item p{
+    margin: 0;
 }
