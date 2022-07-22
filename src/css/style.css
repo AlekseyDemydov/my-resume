@@ -4,12 +4,14 @@ a{
     color: aliceblue;
 }
 .container{
-    margin: 0 auto;
-        width: 1300px;
-        background-image: url(../img/fon.jpg);
-        background-repeat: no-repeat;
-        background-size: contain;
-        color: aliceblue;
+margin: 0 auto;
+    width: 1168px;
+        position: relative;
+       
+        
+        background-color: rgba(22, 32, 47, 0.5);
+        
+            color: aliceblue;
 }
 .box{
     display: flex;
@@ -17,11 +19,14 @@ a{
 }
 
 .side-bar{
-    background-color: rgba(0, 123, 255,0.3);
+    /* background-color: rgba(0, 123, 255,0.3); */
+    width: 420px;
+    margin-left: 20px;
 }
 .side-bar-contacts{
     display: flex;
     flex-direction: column;
+    
 }
 
 .side-bar-contacts a:not(:last-child){
@@ -30,7 +35,7 @@ a{
 
 
 .side-bar-content{
-    margin-left: 15px;
+    margin-left: 80px;
 
 }
 .content{
@@ -38,7 +43,7 @@ width: 520px;
     background-color: rgba(242, 246, 251, 0.538);
   
     border-radius: 10px;
-    margin: 20px 90px;
+    margin: 20px 60px;
     padding: 25px;
     color: black;
 }
@@ -47,6 +52,14 @@ width: 520px;
 }
 
 .lang{
-  
-    margin-right: auto;
+ padding: 10px 10px 0 0;
+  text-align: end;
+    margin-left: auto;
+    position: absolute;
+    right: 0;
+}
+.photo{
+    border-radius: 30px;
+    padding: 10px;
+    
 }
