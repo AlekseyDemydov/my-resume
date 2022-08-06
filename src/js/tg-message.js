@@ -7,9 +7,11 @@ const form = document.getElementById('rg');
 form.addEventListener('submit', function (e) {
   e.preventDefault();
 
-  let message = `<b>info</b>\n`;
-  message += `<b>name</b>${this.name.value}\n`;
-  message += `<b>phone</b>${this.phone.value}`;
+  let message = '';
+  // `<b>message</b>\n`
+  message += `<b>name: </b>${this.name.value}\n`;
+  message += `<b>phone: </b>${this.phone.value}\n`;
+  message += `<b>message: </b>${this.message.value}`;
 
   axios
     .post(URI_API, {
@@ -20,6 +22,7 @@ form.addEventListener('submit', function (e) {
     .then(res => {
       this.name.value = '';
       this.phone.value = '';
+      this.message.value = '';
     })
     .catch(err => {
       alert('warning');
