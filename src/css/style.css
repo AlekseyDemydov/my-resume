@@ -117,7 +117,7 @@ transform: translateY(-50px);
 }
 .btn-submit:hover{
     background-color: rgba(77, 225, 92, 0.645);
-   
+    transition: background-color, box-shadow 250ms linear;
     box-shadow: 10px 5px 5px rgb(81, 70, 70);
 }
 
@@ -185,6 +185,12 @@ box-shadow: 0 0 80px red;
 
 .btn-send-me:hover {
     background-color: rgba(77, 225, 92, 0.645);
-
+transition: background-color, box-shadow 250ms linear;
     box-shadow: 10px 5px 5px rgb(81, 70, 70);
+}
+.btn-close-modal:hover{
+    background-color: rgb(23, 21, 21);
+    color: #ffffff;
+    transition: background-color 400ms linear;
+    
 }
