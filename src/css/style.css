@@ -71,3 +71,38 @@ width: 520px;
 .contact-item p{
     margin: 0;
 }
+.form-section{
+    background-color: rgba(242, 246, 251, 0.621);
+    border-radius: 15px;
+}
+.form{
+    display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 55px;
+        padding: 25px 0;
+}
+
+
+.form-control{
+background-color: rgba(242, 246, 251, 0);
+    margin: 10px 0;
+    border-bottom: 1px solid #000;
+    border-right:none;
+    border-left: none;
+    border-top: none;
+    padding: 5px;
+}
+.btn-submit{
+    margin-top: 10px;
+    border-radius: 5px;
+        padding: 5px 40px;
+        border: none;
+        font-size: large;
+        font-weight: 700;
+}
+.btn-submit:hover{
+    background-color: rgba(77, 225, 92, 0.645);
+    color: aliceblue;
+    box-shadow: 10px 5px 5px rgb(81, 70, 70);
+}
