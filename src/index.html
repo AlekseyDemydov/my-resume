@@ -95,36 +95,40 @@
               </a>
             </li>
           </ol>
-          <button type="button" data-modal-open>send me</button>
+          <button type="button" class="btn-send-me" data-modal-open>
+            send me
+          </button>
         </div>
       </div>
-      <div class="backdrop is-hidden" data-modal>
-        <div class="modal">
-          <form id="rg" class="form">
-            <input
-              type="text"
-              name="name"
-              class="form-control"
-              placeholder="enter your name"
-            />
+    </div>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <form id="rg" class="form">
+          <button type="button" class="btn-close-modal" data-modal-close>
+            x
+          </button>
+          <input
+            type="text"
+            name="name"
+            class="form-control"
+            placeholder="enter your name"
+          />
 
-            <input
-              type="text"
-              name="phone"
-              class="form-control"
-              placeholder="enter your number"
-            />
+          <input
+            type="number"
+            name="phone"
+            class="form-control"
+            placeholder="enter your number"
+          />
 
-            <textarea
-              type="text"
-              name="message"
-              placeholder="enter your message"
-            ></textarea>
+          <textarea
+            type="text"
+            name="message"
+            placeholder="enter your message"
+          ></textarea>
 
-            <button type="submit" class="btn-submit">send</button>
-            <button type="button" data-modal-close>close</button>
-          </form>
-        </div>
+          <button type="submit" class="btn-submit">send</button>
+        </form>
       </div>
     </div>
     <script type="module" src="./js/modal.js"></script>

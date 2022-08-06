@@ -42,7 +42,8 @@ margin: 0 auto;
 .content{
 width: 520px;
     background-color: rgba(242, 246, 251, 0.538);
-  
+display: flex;
+    flex-direction: column;
     border-radius: 10px;
     margin: 20px 60px;
     padding: 25px;
@@ -71,29 +72,13 @@ width: 520px;
 .contact-item p{
     margin: 0;
 }
-.modal{
 
-        width: 528px;
-        height: 581px;
-        
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-        border-radius: 4px;
-    
-
-
-    background-color: rgb(242, 246, 251);
-    border-radius: 15px;
-}
 .form{
     display: flex;
         flex-direction: column;
         align-items: center;
-        margin-top: 55px;
-        padding: 25px 70px;
+        
+        padding: 0 70px;
 }
 
 
@@ -151,4 +136,55 @@ transform: translateY(-50px);
     opacity: 1;
     transition: opacity 250ms linear;
     overflow-y: scroll;
+}
+.modal {
+
+    width: 528px;
+    height: 340px;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+box-shadow: 0 0 80px red;
+    border-radius: 4px;
+
+
+
+    background-color: rgb(242, 246, 251);
+    border-radius: 15px;
+}
+
+.btn-close-modal{
+
+        display: flex;
+        font-weight: 700;
+        justify-content: center;
+        padding: 3px;
+
+    margin-top: 8px;
+        margin-left: 490px;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        background-color: #ffffff;
+}
+
+.btn-send-me{
+    background-color: #b5a1a1;
+        box-shadow: 2px 2px 5px rgb(81, 70, 70);
+       
+        border-radius: 5px;
+        padding: 10px 40px;
+        border: none;
+        font-size: large;
+        font-weight: 700;
+        margin: 20px auto;
+}
+
+.btn-send-me:hover {
+    background-color: rgba(77, 225, 92, 0.645);
+
+    box-shadow: 10px 5px 5px rgb(81, 70, 70);
 }

@@ -93,34 +93,43 @@
               </a>
             </li>
           </ol>
-          <div class="form-section">
-            <form id="rg" class="form">
-              <input
-                type="text"
-                name="name"
-                class="form-control"
-                placeholder="enter your name"
-              />
-
-              <input
-                type="text"
-                name="phone"
-                class="form-control"
-                placeholder="enter your number"
-              />
-
-              <textarea
-                type="text"
-                name="message"
-                placeholder="enter your message"
-              ></textarea>
-
-              <button type="submit" class="btn-submit">send</button>
-            </form>
-          </div>
+          <button type="button" class="btn-send-me" data-modal-open>
+            send me
+          </button>
         </div>
       </div>
     </div>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <form id="rg" class="form">
+          <button type="button" class="btn-close-modal" data-modal-close>
+            x
+          </button>
+          <input
+            type="text"
+            name="name"
+            class="form-control"
+            placeholder="enter your name"
+          />
+
+          <input
+            type="number"
+            name="phone"
+            class="form-control"
+            placeholder="enter your number"
+          />
+
+          <textarea
+            type="text"
+            name="message"
+            placeholder="enter your message"
+          ></textarea>
+
+          <button type="submit" class="btn-submit">send</button>
+        </form>
+      </div>
+    </div>
+    <script type="module" src="./js/modal.js"></script>
     <script type="module" src="./js/tg-message.js"></script>
   </body>
 </html>
